@@ -66,3 +66,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: center;
+}
+.card > button {
+  margin: 5px;
+}

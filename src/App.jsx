@@ -3,33 +3,43 @@ import { useNavigate } from 'react-router-dom';
 
 function App() {
   const navigate = useNavigate();
-  const handleBird = () => {
-    navigate('/birds'); 
+  const handleNavigate = (path) => {
+    navigate(path);
   };
-   const handleArth = () => {
-    navigate('/arthropods');
-  };
-  const handleAmphib = () => {
-    navigate('/amphibians')
-  }
-   const handleFishes = () => {
-    navigate('/fishes')
-  }
+
   return (
     <>
       <h1>VizzuQuiz</h1>
       <div className="card">
-        <button onClick={handleBird}>
-          🐦 Aves
-        </button>
-        <button onClick={handleArth}>
-          🕷️ Artrópodos
-        </button>
-        <button onClick={handleAmphib}>
+        <button onClick={() => handleNavigate('/amphibians')}>
           🐸 Anfibios
         </button>
-        <button onClick={handleFishes}>
+        <button onClick={() => handleNavigate('/arthropods')}>
+          🕷️ Artrópodos
+        </button>
+        <button onClick={() => handleNavigate('/birds')}>
+          🐦 Aves
+        </button>
+        <button onClick={() => handleNavigate('/fishes')}>
           🐠 Peces
+        </button>
+        <button onClick={() => handleNavigate('/fossils')}>
+          🦖 Fósiles
+        </button>
+        <button onClick={() => handleNavigate('/invertebrates')}>
+          🪱 Invertebrados
+        </button>
+        <button onClick={() => handleNavigate('/mammals')}>
+          🦭 Mamíferos
+        </button>
+        <button onClick={() => handleNavigate('/plants')}>
+          🌿 Plantas
+        </button>
+        <button onClick={() => handleNavigate('/reptiles')}>
+          🦎 Reptiles
+        </button>
+        <button onClick={() => handleNavigate('/rocks')}>
+          🪨 Rocas
         </button>
       </div>
     </>
