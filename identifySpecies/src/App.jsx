@@ -4,11 +4,14 @@ import { useNavigate } from 'react-router-dom';
 function App() {
   const navigate = useNavigate();
   const handleBird = () => {
-    navigate('/birds'); // Navegar a la ruta /about
+    navigate('/birds'); 
   };
    const handleArth = () => {
-    navigate('/arthropods'); // Navegar a la ruta /about
+    navigate('/arthropods');
   };
+  const handleAmphib = () => {
+    navigate('/amphibians')
+  }
   return (
     <>
       <h1>VizzuQuiz</h1>
@@ -17,7 +20,10 @@ function App() {
           🐦 Aves
         </button>
         <button onClick={handleArth}>
-          🐸 Artrópodos
+          🕷️ Artrópodos
+        </button>
+        <button onClick={handleAmphib}>
+          🐸 Anfibios
         </button>
       </div>
     </>
