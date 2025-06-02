@@ -3,7 +3,6 @@ body {
   max-width: 1000px;
   padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  /* background-color: #EFECCA; */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -77,12 +76,12 @@ body {
 }
 
 .correctAnswer {
-  background-color:#A9CBB7;
+  background-color:#05913f;
   margin: 4px;
 }
 
 .incorrectAnswer {
-  background-color: #FF934F;
+  background-color: #ff524f;
   margin: 4px;
   text-decoration: line-through;
 }

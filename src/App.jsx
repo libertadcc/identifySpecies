@@ -12,6 +12,9 @@ function App() {
   const handleAmphib = () => {
     navigate('/amphibians')
   }
+   const handleFishes = () => {
+    navigate('/fishes')
+  }
   return (
     <>
       <h1>VizzuQuiz</h1>
@@ -24,6 +27,9 @@ function App() {
         </button>
         <button onClick={handleAmphib}>
           🐸 Anfibios
+        </button>
+        <button onClick={handleFishes}>
+          🐠 Peces
         </button>
       </div>
     </>

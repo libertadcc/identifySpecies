@@ -13,6 +13,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/birds" element={<QuizGame dataJSON={'birds.json'}/>} />
         <Route path="/arthropods" element={<QuizGame dataJSON={'arthropods.json'}/>} />
         <Route path="/amphibians" element={<QuizGame dataJSON={'amphibians.json'}/>} />
+        <Route path="/fishes" element={<QuizGame dataJSON={'fishes.json'}/>} />
 
       </Routes>
     </BrowserRouter>
