@@ -76,7 +76,7 @@ export default function QuizGame({dataJSON}) {
         const listCandidates = [];
         const correctIndex = Math.floor(Math.random() * 4) + 1;
         setCorrectAnswerIndex(correctIndex);
-
+        console.log('selectedQuestion', selectedQuestion.a)
         const tempAnswers = [];
         for (let i = 1; i <= 4; ++i) {
             if (i === correctIndex) {
